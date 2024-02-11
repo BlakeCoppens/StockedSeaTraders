@@ -5,13 +5,12 @@
     <meta name="viewport" content="width = device-width, initial-scale=1.0" />
     <title>{{ title }} Stock</title>
     <link
-      hredf="{{url_for('static', filename='styles/style.css')}}"
+      href="{{url_for('static', filename='styles/style.css')}}"
       rel="stylesheet"
     />
   </head>
   <body>
     <h1>{{ title }} Stock</h1>
-    <p>{{ status }}</p>
 
     <form action="/stockInfo">
       <input
@@ -22,5 +21,20 @@
       />
       <button type="submit">Search</button>
     </form>
+    <p>{{ status }}</p>
+    <h2>Chart</h2>
+    <img
+      src="{{ url_for('static', filename='styles/stonks-up.gif') }}"
+      alt="Stock Chart (Work in progress, Planned for future)"
+      width="550"
+      height="330"
+    />
+
+    <h3>
+      Planned Updates: <br />
+      1. Add a dynamic way to scrape pages to get the graphs of the {{ title }}
+      company.<br />
+      2. Link pages where you can buy the {{ title }} stock.
+    </h3>
   </body>
 </html>
