@@ -1,0 +1,5 @@
+Tell me about a stock, its major events in the past 5 years, and general trend for price in less then 100 words based on the company:
+
+[INFORMATION]
+{{$input}}
+[END INPUT]
