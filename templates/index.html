@@ -5,12 +5,13 @@
     <meta name="viewport" content="width = device-width, initial-scale=1.0" />
     <title>Get Stock Information</title>
     <link
-      hredf="{{url_for('static', filename='styles/style.css')}}"
+      href="{{url_for('static', filename='styles/style.css')}}"
       rel="stylesheet"
     />
   </head>
   <body>
-    <h1>Get Stock Information</h1>
+    <h1>Stocked Sea Traders Trade Assistant &trade;</h1>
+    <h1>By: Blake Coppens and William Shaoul</h1>
     <form action="/stockInfo">
       <input
         type="text"
@@ -20,5 +21,12 @@
       />
       <button type="submit">Search</button>
     </form>
+    <h2>Chart</h2>
+    <img
+      src="{{ url_for('static', filename='styles/blake and will.jpg') }}"
+      alt="Stock Chart (Work in progress, Planned for future)"
+      width="1280"
+      height="960"
+    />
   </body>
 </html>
