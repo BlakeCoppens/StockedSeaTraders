@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <title>Get Stock Information</title>
+    <link
+      hredf="{{url_for('static', filename='styles/style.css')}}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Get Stock Information</h1>
+    <form action="/stockInfo">
+      <input
+        type="text"
+        name="stockName"
+        id="stockInfo"
+        placeholder="Enter a stock abbreviation"
+      />
+      <button type="submit">Search</button>
+    </form>
+  </body>
+</html>
